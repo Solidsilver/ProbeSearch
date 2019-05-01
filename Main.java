@@ -69,9 +69,14 @@ public class Main {
     }
 
     private static void printArr(String[] arr) {
+        if (arr.length != 0) {
+            System.out.println("\n\n*****RESULTS*****");
+
+        }
         for (int ix = 1; ix <= arr.length; ix++) {
             System.out.println(arr[arr.length - ix]);
         }
+        System.out.println("*****************\n");
     }
 
     private static String[] fileToString(String[] str, String fname) throws Exception {
